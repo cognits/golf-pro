@@ -1,0 +1,163 @@
+.ios, .md{
+  page-players {
+    // header
+    .navbar_players{
+      padding: 10px 16px;
+    }
+    // title Players
+    .header_title{
+      padding: 0;
+    }
+
+    .header_title > div{
+      text-align: left;
+      padding-left: 16px;
+      font-size: 25px;
+      padding-top: 14px;
+      padding-bottom: 10px;
+      font-family: Lato_Black;
+      color: #E8ECf1;
+    }
+
+    // search bar
+
+    .searchbarContainer{
+      padding: 0px 16px;
+      padding-bottom: 3px;
+      background-color: #007AFF;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+      // top: auto;
+    }
+
+    .searchbar_ion_item{
+      padding: 0;
+      background-color: transparent;
+    }
+
+    .item-inner{
+      padding-right: 0 !important;
+    }
+
+    .label-ios, .label-md{
+      margin: 0;
+    }
+    // icon search in search bar
+    .searchbar-md .searchbar-search-icon{
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .searchbar-md .searchbar-input{
+      font-size: 14px;
+      font-family: Lato_Regular;
+      height: 30px;
+      padding: 6px 40px;
+      border-radius: 5px;
+    }
+    // placeholder search bar
+    .searchbar-md .searchbar-input::-moz-placeholder {
+      color: #E8ECf1;
+    }
+
+    .searchbar-md .searchbar-input:-ms-input-placeholder {
+      color: #E8ECf1;
+    }
+
+    .searchbar-md .searchbar-input::-webkit-input-placeholder {
+      text-indent: 0;
+      color: #E8ECf1;
+    }
+
+    .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{
+      border: none;
+    }
+
+    .navbar_players > div > .list-ios{
+      margin-top: 45px;
+      margin-bottom: 0px;
+    }
+
+    // buttons [Add Player] and [Filter Search]
+    //
+    .buttonsContainer{
+      margin-top: 48px;
+    }
+
+    .ionContentPlayers{
+      background-color: #F8F8FC;
+    }
+
+    .ionContentPlayers > .scroll-content{
+      padding: 0;
+    }
+
+    .buttonsContainer{
+      display: flex;
+      padding: 16px;
+    }
+
+    .AddPlayerButton{
+      width: 50%;
+      padding-right: 8px;
+      height: 40px;
+    }
+
+    .iconInButtons{
+      margin-right: 8px;
+      width: 24px;
+      height: 24px;
+    }
+
+    .AddPlayerButton > button, .FilterSearchButton > button{
+      height: 100%;
+      font-size: 12pt;
+    }
+
+    .FilterSearchButton{
+      width: 50%;
+      padding-left: 8px;
+      height: 40px;
+    }
+
+    .FilterSearchButton > button{
+      color: #4A5C72;
+    }
+
+
+    // list
+    //
+    .ionListPlayers > .item-ios{
+      border-bottom: 2px solid #E8ECf1;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .NameText{
+      font-size: 14px;
+      font-family: Lato_Bold;
+      color: #4A5C72;
+    }
+
+    .LevelText{
+      font-size: 14px;
+      font-family: Lato_Regular;
+      color: #4A5C72;
+    }
+
+    // icon right:
+    .icon_right_grey{
+      width: 26px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 10px;
+      margin: auto;
+    }
+
+  }
+
+}

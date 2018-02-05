@@ -1,0 +1,90 @@
+<!--
+  Generated template for the PlayersPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary" class="navbar_players">
+    <ion-title class="header_title padding_0" text-align: left>Players</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="ionContentPlayers">
+  <div class="searchbarContainer">
+    <ion-list class="ionListHeader margin_0">
+      <ion-item class="searchbar_ion_item">
+        <ion-searchbar type="text" placeholder="Find a player" class="header_input padding_0" mode="md"></ion-searchbar>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="buttonsContainer">
+    <div class="AddPlayerButton">
+      <button ion-button round full icon-left color="skyBlue" class="margin_0">
+        <!-- <ion-icon class="iconAdd"> -->
+          <img src="../../assets/img/icon_add_white.png" class="iconInButtons">
+        <!-- </ion-icon> -->
+        Add Player
+      </button>
+    </div>
+
+    <div class="FilterSearchButton">
+      <button name="add" ion-button round full icon-left color="light" class="margin_0">
+        <!-- <ion-icon class="iconFunnel"> -->
+          <img src="../../assets/img/icon_filter.png" class="iconInButtons">
+        <!-- </ion-icon> -->
+        Filter Search
+      </button>
+    </div>
+  </div>
+
+  <div class="">
+    <ion-list no-lines class="ionListPlayers">
+      <ion-item (click)="navigateToPlayer()">
+        <ion-avatar item-start>
+          <img src="../../assets/img/imagen_prueba.jpg">
+        </ion-avatar>
+        <p class="NameText">Johnny Doe</p>
+        <p class="LevelText">Level 1 (Beginner)</p>
+        <img src="../../assets/img/icon_right_grey.png" class="icon_right_grey">
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="../../assets/img/imagen_prueba.jpg">
+        </ion-avatar>
+        <p class="NameText">Johnny Doe</p>
+        <p class="LevelText">Level 1 (Beginner)</p>
+        <img src="../../assets/img/icon_right_grey.png" class="icon_right_grey">
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="../../assets/img/imagen_prueba.jpg">
+        </ion-avatar>
+        <p class="NameText">Johnny Doe</p>
+        <p class="LevelText">Level 1 (Beginner)</p>
+        <img src="../../assets/img/icon_right_grey.png" class="icon_right_grey">
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="../../assets/img/imagen_prueba.jpg">
+        </ion-avatar>
+        <p class="NameText">Johnny Doe</p>
+        <p class="LevelText">Level 1 (Beginner)</p>
+        <img src="../../assets/img/icon_right_grey.png" class="icon_right_grey">
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="../../assets/img/imagen_prueba.jpg">
+        </ion-avatar>
+        <p class="NameText">Johnny Doe</p>
+        <p class="LevelText">Level 1 (Beginner)</p>
+        <img src="../../assets/img/icon_right_grey.png" class="icon_right_grey">
+      </ion-item>
+    </ion-list>
+
+  </div>
+
+</ion-content>
