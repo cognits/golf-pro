@@ -1,14 +1,142 @@
 page-player-profile-locker {
+  // header
   .header_title > div{
-    padding-left: 16px;
     font-size: 20px;
     padding-top: 14px;
     padding-bottom: 10px;
     font-family: Lato_Regular;
-    color: #E8ECf1;
+    padding: 0;
+    text-align: center;
+  }
+
+  .iconHeader{
+    width: 24px;
   }
 
   .buttonBack{
     background-color: transparent;
   }
+
+  // tabs profile / locker
+
+  .tabsProfileLockerContainer{ //tabs container
+    background-color: #007AFF;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+
+  .tabsProfileLockerContainer > div{
+    width: 50%;
+    height: 100%;
+  }
+    // change button's properties in segment iOS
+  .segment-ios-primary .segment-button{
+    font-size: 14px;
+    color: #4A5C72;
+    font-family: Lato_Bold;
+  }
+
+  .segment-ios-primary .segment-button.segment-activated{
+    font-size: 14px;
+    font-family: Lato_Black;
+    color: #fff;
+  }
+
+  .segment-activated .indicator{
+    display: block;
+  }
+
+  .indicator{
+    background-color: #00CAE7;
+    width: 25px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    display: none;
+    border-radius: 15px;
+  }
+
+  // content segment
+
+  .cardContainer{
+    margin-top: 50px;
+    height: 20%;
+  }
+
+  .card{
+    padding: 15px;
+  }
+
+  .picNameContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nameDescriptionContainer{
+    margin-left: 15px;
+  }
+
+  .picPlayer{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    // margin-left: 15px;
+  }
+
+  .titleCard{
+    font-size: 14px;
+    color: #4A5C72;
+    font-family: Lato_Bold;
+  }
+
+  .descriptionCard{
+    font-size: 12px;
+    color: #4A5C72;
+    font-family: Lato_Regular;
+  }
+
+  .statusText{
+    font-size: 14px;
+    color: #76cf70;
+    font-family: Lato_Regular;
+  }
+
+  .titleCard12{
+    font-size: 12px;
+    color: #4A5C72;
+    font-family: Lato_Bold;
+  }
+
+  .hr{
+    margin: 15px 0;
+    background-color: #939598;
+    opacity: 0.2;
+  }
+
+  .statusInfoContainer{
+    width: 45%;
+  }
+
+  .messageButtonContainer{
+    width: 55%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .iconInButtons{
+    width: 24px;
+    margin-right: 8px;
+  }
+
+  .messageButtonContainer>button{
+    height: 40px;
+  }
+
 }

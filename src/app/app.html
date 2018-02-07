@@ -2,25 +2,25 @@
 
 <ion-footer class="ionFooter">
   <ion-toolbar class="toolbarFooter">
-    <div class="boxItem">
+    <div class="boxItem" (click)="clickFooter(0)">
       <img class="iconFooter" [src]='iconNavFooter[0]'>
-      <p class="textFooter"> Agenda </p>
+      <p [ngClass]="textFooterClass[0]"> Agenda </p>
     </div>
-    <div class="boxItem">
+    <div class="boxItem" (click)="clickFooter(1)">
       <img class="iconFooter" [src]='iconNavFooter[1]'>
-      <p class="textFooter"> Activities </p>
+      <p [ngClass]="textFooterClass[1]"> Activities </p>
     </div>
-    <div class="boxItem">
+    <div class="boxItem" (click)="clickFooter(2)">
       <img class="iconFooter" [src]='iconNavFooter[2]'>
-      <p class="textFooterOn"> Players </p>
+      <p [ngClass]="textFooterClass[2]"> Players </p>
     </div>
-    <div class="boxItem">
+    <div class="boxItem" (click)="clickFooter(3)">
       <img class="iconFooter" [src]='iconNavFooter[3]'>
-      <p class="textFooter"> Messages </p>
+      <p [ngClass]="textFooterClass[3]"> Messages </p>
     </div>
-    <div class="boxItem">
+    <div class="boxItem" (click)="clickFooter(4)">
       <img class="iconFooter" [src]='iconNavFooter[4]'>
-      <p class="textFooter"> Profile </p>
+      <p [ngClass]="textFooterClass[4]"> Profile </p>
     </div>
   </ion-toolbar>
 </ion-footer>

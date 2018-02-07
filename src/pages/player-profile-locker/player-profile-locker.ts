@@ -15,12 +15,13 @@ import { PlayersPage } from '../players/players';
   templateUrl: 'player-profile-locker.html',
 })
 export class PlayerProfileLockerPage {
+  profile_locker: string = "profile";
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
   }
 
   back_to_players(){
-    this.navCtrl.pop(PlayersPage);
+    this.navCtrl.pop();
     console.log("players")
   }
 

@@ -7,19 +7,70 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <button start (click)="back_to_players()" class="buttonBack">
-      <img src="../../assets/img/icon_back_white.png" style="width: 24px">
-    </button>
+    <ion-buttons left>
+      <button (click)="back_to_players()" class="buttonBack">
+        <img src="../../assets/img/icon_back_white.png" class="iconHeader">
+      </button>
+    </ion-buttons>
+
     <ion-title class="header_title">Player</ion-title>
+
+    <ion-buttons right>
+      <button class="buttonBack">
+        <img src="../../assets/img/icon_settings.png" class="iconHeader">
+      </button>
+    </ion-buttons>
+
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-    <!-- <ion-tabs tabbarPlacement="top" color="primary">
-        <ion-tab tabIcon="card" tabTitle="Questions" [root]="tab1"></ion-tab>
-        <ion-tab tabIcon="stats" tabTitle="Statistics" [root]="tab2"></ion-tab>
-        <ion-tab tabIcon="settings" tabTitle="Settings" [root]="tab3"></ion-tab>
-    </ion-tabs> -->
+<ion-content>
+  <div class="tabsProfileLockerContainer">
+    <ion-segment [(ngModel)]="profile_locker" color="primary">
+      <ion-segment-button value="profile" class="segment-activated">
+        <span>Profile</span>
+        <div class="indicator"></div>
+      </ion-segment-button>
+
+      <ion-segment-button value="locker">
+        <span>Locker</span>
+        <div class="indicator"></div>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  <div class="cardContainer" [ngSwitch]="profile_locker">
+    <ion-list *ngSwitchCase="'profile'">
+       <ion-card class="card">
+          <div class="picNameContainer">
+            <img class="picPlayer" src="assets/img/imagen_prueba.jpg" alt="">
+            <div class="nameDescriptionContainer">
+              <p class="titleCard">Charles Porter</p>
+              <p class="descriptionCard">Oct 29, 2009</p>
+              <p class="descriptionCard">519-1556-125</p>
+              <p class="descriptionCard">charlesporter@gmail.com</p>
+            </div>
+          </div>
+          <hr class="hr">
+          <div class="displayFlex">
+            <div class="statusInfoContainer">
+              <p class="titleCard">Status &nbsp;<span class="statusText"> Active</span></p>
+              <p class="descriptionCard">Login: <span class="titleCard12">3 days ago</span></p>
+              <p class="descriptionCard">Messages: <span class="titleCard12">5</span></p>
+              <p class="descriptionCard">Messaged: <span class="titleCard12">10 days ago</span></p>
+            </div>
+
+            <div class="messageButtonContainer">
+              <button ion-button round full icon-left color="skyBlue" class="margin_0">
+                  <img src="../../assets/img/icon_message_white.png" class="iconInButtons">
+                  Send Message
+              </button>
+            </div>
+          </div>
+
+
+       </ion-card>
+     </ion-list>
+  </div>
 </ion-content>

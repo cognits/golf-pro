@@ -47,6 +47,10 @@
   padding: 0;
 }
 
+.displayFlex{
+  display: flex;
+}
+
 // Style Android buttons
 .md button {
   text-transform: none;
@@ -93,10 +97,19 @@
 
 .textFooterOn{
   margin: 0;
-  font-family: Lato_Bold;
+  font-family: Lato_Black;
   font-size: 9px;
   color: #007AFF;
+  // animation-name: textAnim;
+  // animation-duration: 0.4s;
+  // animation-fill-mode: forwards;
 }
+
+@keyframes textAnim {
+  0%{font-size: 9px;}
+  100%{font-size: 11px;}
+}
+
 
 // don't show back button in ios
 .back-button.show-back-button{
