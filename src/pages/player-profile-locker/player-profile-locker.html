@@ -41,8 +41,8 @@
     </ion-segment>
   </div>
   <div class="cardContainer" [ngSwitch]="profile_locker">
-    <ion-list *ngSwitchCase="'profile'">
-       <ion-card class="card">
+    <ion-list *ngSwitchCase="'profile'" class="list_profile_locker">
+       <ion-card class="cardProfile">
           <div class="picNameContainer">
             <img class="picPlayer" src="assets/img/imagen_prueba.jpg" alt="">
             <div class="nameDescriptionContainer">
@@ -68,9 +68,80 @@
               </button>
             </div>
           </div>
-
-
        </ion-card>
+
+       <ion-card class="cardProfile">
+         <p class="titleCard">Goals</p>
+         <p class="descriptionCardItalic">"I want to play on my High School Golf Team. I would like to break 80 by the end of the year."</p>
+       </ion-card>
+
+       <ion-card class="cardProfile">
+          <p class="titleCard">Assigned Tags</p>
+          <p class="textBlue">System Tags</p>
+          <div>
+            <button class="Tags">Beginner</button>
+            <button class="Tags">Kids</button>
+          </div>
+
+          <p class="textBlue">Custom Tags</p>
+          <div>
+            <button class="Tags">Jr</button>
+            <button class="Tags">Mondays</button>
+            <button class="Tags">Wednesdays</button>
+          </div>
+          <button ion-button round full color="grayButton" class="editTagsButton">Edit Tags</button>
+       </ion-card>
+     </ion-list>
+
+     <ion-list *ngSwitchCase="'locker'" class="list_profile_locker">
+        <ion-card class="generalDataContainer">
+          <div class="levelBox">
+            <div class="">
+              <div class="levelNumber"><span>1</span></div>
+              <p class="levelText">Beginner</p>
+            </div>
+          </div>
+          <div class="generalData">
+            <p class="titleCard">General Data</p>
+            <p class="descriptionCard">Coach: <span class="titleCard12">John David Crow</span></p>
+            <p class="descriptionCard">Onboard Date: <span class="titleCard12">Jan 22, 2015</span></p>
+          </div>
+        </ion-card>
+
+        <ion-card class="cardLocker">
+          <p class="titleCard textCenter">Player Level</p>
+          <div class="playerLevelContainer">
+            <div class="textCenter">
+              <img src="../assets/img/locker_putting.png" class="iconLocker">
+              <p class="textBlueLevel">Putting</p>
+              <p>4.6</p>
+            </div>
+            <div class="textCenter">
+              <img src="../assets/img/locker_chipping.png" class="iconLocker">
+              <p class="textBlueLevel">Chipping</p>
+              <p>2.5</p>
+            </div>
+            <div class="textCenter">
+              <img src="../assets/img/locker_swing.png" class="iconLocker">
+              <p class="textBlueLevel">Swing</p>
+              <p>2.5</p>
+            </div>
+            <div class="textCenter">
+              <img src="../assets/img/locker_playing.png" class="iconLocker">
+              <p class="textBlueLevel">Playing</p>
+              <p>3.5</p>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="cardLocker">
+          <p class="titleCard textCenter">Player Level</p>
+          <div class="playerLevelContainer">
+            <div class="textCenter">
+              <div class="circleActivityHistory"> 60 </div>
+              <p class="textBlueLevel">Putting</p>
+            </div>
+          </div>
+        </ion-card>
      </ion-list>
   </div>
 </ion-content>

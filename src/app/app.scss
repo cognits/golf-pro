@@ -51,6 +51,11 @@
   display: flex;
 }
 
+.textCenter{
+  text-align: center;
+  text-align: -webkit-center;
+}
+
 // Style Android buttons
 .md button {
   text-transform: none;
@@ -63,7 +68,7 @@
 
 // footer
 .ionFooter{
-  height: 60px;
+  height: 55px;
 }
 
 .toolbarFooter{

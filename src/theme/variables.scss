@@ -40,7 +40,11 @@ $colors: (
   light:      #fff,
   dark:       #222,
 
-  skyBlue:     #00cAE7
+  skyBlue:     #00cAE7,
+  grayButton: (
+    base: #f8f8fc,
+    contrast: #6D87A6
+  )
 );
 
 $searchbar-md-input-clear-icon-color: #4A5C72;
