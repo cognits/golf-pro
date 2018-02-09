@@ -132,16 +132,70 @@
               <p>3.5</p>
             </div>
           </div>
-        </ion-card>
-        <ion-card class="cardLocker">
-          <p class="titleCard textCenter">Player Level</p>
+          <hr class="hr">
+          <p class="titleCard textCenter">Activity History</p>
           <div class="playerLevelContainer">
             <div class="textCenter">
-              <div class="circleActivityHistory"> 60 </div>
-              <p class="textBlueLevel">Putting</p>
+              <div class="circleActivityHistory">
+                <p class="numberInCircle">60</p>
+              </div>
+              <p class="textBlueLevel">Check In's</p>
+            </div>
+            <div class="textCenter">
+              <div class="circleActivityHistory">
+                <p class="numberInCircle">25</p>
+              </div>
+              <p class="textBlueLevel">Lessons</p>
+            </div>
+            <div class="textCenter">
+              <div class="circleActivityHistory">
+                <p class="numberInCircle">10</p>
+              </div>
+              <p class="textBlueLevel">Classes</p>
             </div>
           </div>
+          <button ion-button round full color="grayButton" class="editTagsButton">Add Data</button>
         </ion-card>
+
+        <ion-card class="cardLocker">
+          <span class="titleCard">Player Notes</span>
+          <button class="buttonSeeAll">See All</button>
+
+          <div class="noteContainer">
+            <div class="textNoteContainer">
+              <p class="textLesson">Lesson 3 - Putting</p>
+              <p class="descriptionNote">In this lesson we learn how putting is about...</p>
+              <p class="dateNote">Dec 15</p>
+            </div>
+            <div class="iconEditContainer">
+              <img src="../assets/img/icon_edit.png" class="iconEdit">
+            </div>
+          </div>
+          <!-- de prueba -->
+          <div class="noteContainer">
+            <div class="textNoteContainer">
+              <p class="textLesson">Lesson 3 - Putting</p>
+              <p class="descriptionNote">In this lesson we learn how putting is about...</p>
+              <p class="dateNote">Dec 15</p>
+            </div>
+            <div class="iconEditContainer">
+              <img src="../assets/img/icon_edit.png" class="iconEdit">
+            </div>
+          </div>
+          <div class="noteContainer">
+            <div class="textNoteContainer">
+              <p class="textLesson">Lesson 3 - Putting</p>
+              <p class="descriptionNote">In this lesson we learn how putting is about...</p>
+              <p class="dateNote">Dec 15</p>
+            </div>
+            <div class="iconEditContainer">
+              <img src="../assets/img/icon_edit.png" class="iconEdit">
+            </div>
+          </div>
+          <button ion-button round full color="grayButton" class="sendNoteButton">Add Data</button>
+        </ion-card>
+
+
      </ion-list>
   </div>
 </ion-content>

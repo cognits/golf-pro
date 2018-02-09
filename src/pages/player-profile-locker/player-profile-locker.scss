@@ -26,6 +26,7 @@ page-player-profile-locker {
     display: flex;
     align-items: center;
     height: 40px;
+    z-index: 10;
   }
 
   .tabsProfileLockerContainer > div{
@@ -122,8 +123,7 @@ page-player-profile-locker {
 
   .hr{
     margin: 15px 0;
-    background-color: #939598;
-    opacity: 0.2;
+    background-color: #E8ECf1;
   }
 
   .statusInfoContainer{
@@ -176,7 +176,7 @@ page-player-profile-locker {
   // edit tags
 
   .editTagsButton{
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .button-ios-grayButton.activated{
@@ -231,8 +231,7 @@ page-player-profile-locker {
     color: #fff;
     font-family: Lato_Regular;
     font-size: 12px;
-    margin-top: 10px;
-    margin: 10px 0;
+    margin-bottom: 10px;
   }
 
   // player level
@@ -244,7 +243,7 @@ page-player-profile-locker {
   }
 
   .playerLevelContainer>div{
-    width: 25%;
+    width: 30%;
   }
 
   .iconLocker{
@@ -258,41 +257,90 @@ page-player-profile-locker {
     font-size: 14px;
     color: #71A5FD;
     font-family: Lato_Regular;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .circleActivityHistory{
-    // border: 3px solid transparent;
-    // // border-image-source: linear-gradient(#007AFF, #00CAE7);
-    // // border-image-slice: 20;
-    // padding: 1em;
-    // border-radius: 100%;
-    // width: 70px;
-    // height: 70px;
-    // background: transparent;
-    // position: relative;
-    // background-clip: padding-box;
-    // padding: 10px;
     position: relative;
-    border: 4px solid transparent;
-    border-radius: 16px;
-
-    background-clip: padding-box;
-    padding: 10px;
-    background: linear-gradient(#a42e6e, #783057);
-    // content: '';
-    z-index: -1;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    // background-clip: padding-box;
+    background: linear-gradient(#00CAE7, #007AFF);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .circleActivityHistory::after{
-    position: absolute;
-    top: -4px; bottom: -4px;
-    left: -4px; right: -4px;
-    // background: linear-gradient(#a42e6e, #783057);
-    content: '';
-    // z-index: -1;
-    border-radius: 16px;
-    background: white;
+  .numberInCircle{
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    color: #00CAE7;
+    font-size: 30px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  // player notes
+
+  .buttonSeeAll{
+    color: #007AFF;
+    font-family: Lato_Regular;
+    background-color: transparent;
+    float: right;
+    font-size: 14px;
+  }
+
+  .noteContainer{
+    border-bottom: 1px solid #E8ECf1;
+    display: flex;
+  }
+
+  .textNoteContainer{
+    width: 80%;
+  }
+
+  .textLesson{
+    font-family: Lato_Bold;
+    color: #6D87A6;
+    font-size: 12px;
+    margin-top: 16px;
+  }
+
+  .descriptionNote{
+    font-family: Lato_Regular;
+    color: #6D87A6;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .dateNote{
+    font-family: Lato_Italic;
+    color: #6D87A6;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .iconEditContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 20%;
+    padding-bottom: 10px;
+  }
+
+  .iconEdit{
+    width: 24px;
+  }
+
+  .sendNoteButton{
+    margin-top: 10px;
   }
 
 }
