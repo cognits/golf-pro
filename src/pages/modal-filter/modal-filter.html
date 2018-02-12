@@ -1,0 +1,109 @@
+<!--
+  Generated template for the ModalFilterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar class="navBarModalFilter">
+    <ion-title class="titleHeader">Filter Search</ion-title>
+    <ion-buttons right>
+      <button (click)="closeModal()" class="closeModal"><ion-icon name="close"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="ionContentFilter">
+    <p class="titleFilter">Sort by age</p>
+    <div class="boxesContainer">
+      <div class="filterOff" col-4>
+        <div class="">
+          <img src="../assets/img/icon_date.png" class="iconFilter">
+          <p class="textInBoxFilter">Kids</p>
+        </div>
+      </div>
+
+      <div class="filterOff horizontalCenter" col-4>
+        <div class="">
+          <img src="../assets/img/icon_date.png" class="iconFilter">
+          <p class="textInBoxFilter">Teens</p>
+        </div>
+      </div>
+
+      <div class="filterOff horizontalRight" col-4>
+        <div class="">
+          <img src="../assets/img/icon_date.png" class="iconFilter">
+          <p class="textInBoxFilter">Adults</p>
+        </div>
+      </div>
+    </div>
+    <hr class="hr">
+    <p class="titleFilter">Sort by level</p>
+    <div class="boxesContainer">
+      <div class="filterOff horizontalLeft" col-4>
+        <div class="">
+          <p class="numberInBoxFilter">1</p>
+          <p class="textInBoxFilter">Level</p>
+        </div>
+      </div>
+
+      <div class="filterOff horizontalCenter" col-4>
+        <div class="">
+          <p class="numberInBoxFilter">2</p>
+          <p class="textInBoxFilter">Level</p>
+        </div>
+      </div>
+
+      <div class="filterOff horizontalRight" col-4>
+        <div class="">
+          <img src="../assets/img/icon_date.png" class="iconFilter">
+          <p class="textInBoxFilter">Beginners</p>
+        </div>
+      </div>
+    </div>
+    <div class="boxesContainer ">
+      <div class="filterOff horizontalLeft" col-4>
+        <div class="">
+          <img src="../assets/img/icon_date.png" class="iconFilter">
+          <p class="textInBoxFilter">Intermediate</p>
+        </div>
+      </div>
+
+      <div class="filterOff horizontalCenter" col-4>
+        <div class="">
+          <img src="../assets/img/icon_date.png" class="iconFilter">
+          <p class="textInBoxFilter">Advance</p>
+        </div>
+      </div>
+
+      <div class="filterOff horizontalRight" col-4>
+        <div class="">
+          <img src="../assets/img/icon_date.png" class="iconFilter">
+          <p class="textInBoxFilter">Elite</p>
+        </div>
+      </div>
+    </div>
+    <hr class="hr">
+    <p class="titleFilter">Select Custom Tags</p>
+    <div class="tagsContainer">
+      <button class="buttonTag">Superstars</button>
+      <button class="buttonTag">Monday</button>
+      <button class="buttonTag">FirstTeePlayers</button>
+      <button class="buttonTag">G82</button>
+      <button class="buttonTag">Active</button>
+      <button class="buttonTag">Jr</button>
+      <button class="buttonTag">4DRecord</button>
+      <button class="buttonTag">Lefty</button>
+      <button class="buttonTag">Senior</button>
+      <button class="buttonTag">Wednesday</button>
+    </div>
+</ion-content>
+
+<ion-footer>
+  <ion-navbar class="navbarButtonInFooter" color="light">
+      <button ion-button color="skyBlue" class="primaryButtonFooter">Apply</button>
+  </ion-navbar>
+</ion-footer>

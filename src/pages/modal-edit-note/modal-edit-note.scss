@@ -1,0 +1,53 @@
+page-modal-edit-note {
+  // header
+  .navBarModalEdit > div{
+    background-color: transparent;
+    border-color: transparent !important;
+  }
+
+  .titleHeader > div{
+    color: #4A5C72;
+    font-family: Lato_Bold;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  // close button
+
+  .closeModal{
+    background-color: transparent;
+    color: #4A5C72;
+    font-family: Lato_Bold;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 10px;
+  }
+
+  .textLesson{
+    font-family: Lato_Bold;
+    color: #6D87A6;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .dateNote{
+    font-family: Lato_Italic;
+    color: #6D87A6;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  .hr{
+    margin: 15px 0;
+    background-color: #E8ECf1;
+  }
+
+  .descriptionNote{
+    font-family: Lato_Regular;
+    color: #6D87A6;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}

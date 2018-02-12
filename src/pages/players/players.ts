@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { PlayerProfileLockerPage } from '../player-profile-locker/player-profile-locker';
+import { ModalFilterPage } from '../modal-filter/modal-filter';
 
 /**
  * Generated class for the PlayersPage page.
@@ -16,7 +17,7 @@ import { PlayerProfileLockerPage } from '../player-profile-locker/player-profile
 })
 export class PlayersPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
 
   ionViewDidLoad() {
@@ -25,6 +26,11 @@ export class PlayersPage {
 
   navigateToPlayer() {
     this.navCtrl.push(PlayerProfileLockerPage)
+  }
+
+  showModalFilter(){
+    let modalFilter = this.modalCtrl.create('ModalFilterPage')
+    modalFilter.present();
   }
 
 }

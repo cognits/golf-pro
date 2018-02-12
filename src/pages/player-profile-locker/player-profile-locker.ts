@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PlayersPage } from '../players/players';
+import { NoteListPage } from '../note-list/note-list';
 
 /**
  * Generated class for the PlayerProfileLockerPage page.
@@ -22,7 +23,10 @@ export class PlayerProfileLockerPage {
 
   back_to_players(){
     this.navCtrl.pop();
-    console.log("players")
+  }
+
+  go_notes(){
+    this.navCtrl.push(NoteListPage);
   }
 
   ionViewDidLoad() {

@@ -1,0 +1,97 @@
+page-modal-filter {
+  // header
+  .navBarModalFilter > div{
+    background-color: transparent;
+    border-color: transparent !important;
+  }
+
+  .titleHeader > div{
+    color: #4A5C72;
+    font-family: Lato_Bold;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  // close button
+
+  .closeModal{
+    background-color: transparent;
+    color: #4A5C72;
+    font-family: Lato_Bold;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 20px;
+  }
+
+  // sort by age
+
+  .ionContentFilter > .scroll-content{
+    padding: 0 40px;
+  }
+
+  .titleFilter{
+    font-family: Lato_Regular;
+    color: #6D87A6;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .boxesContainer{
+    margin-top: 15px;
+    display: flex;
+  }
+
+  .filterOff{
+    text-align: center;
+    padding: 0;
+  }
+
+  .filterOff > div{
+    padding: 15px 5px;
+    background-color: #E8ECF1;
+    width: 85%;
+    border-radius: 6px;
+  }
+
+  .iconFilter{
+    height: 40px;
+  }
+
+  .textInBoxFilter{
+    color: #6D87A6;
+    font-family: Lato_Regular;
+    margin: 10px 0 0;
+    font-size: 14px;
+  }
+
+  .hr{
+    margin: 15px 0;
+    background-color: #E8ECf1;
+  }
+
+  .numberInBoxFilter{
+    color: #6D87A6;
+    font-family: Lato_Bold;
+    margin: 0;
+    font-size: 36px;
+    height: 40px;
+  }
+
+  // tags
+
+  .tagsContainer{
+    margin-top: 15px;
+  }
+
+  .buttonTag{
+    background-color: #E8ECF1;
+    color: #4A5C72;
+    font-family: Lato_Regular;
+    font-size: 12px;
+    padding: 6px 11px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+}

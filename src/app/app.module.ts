@@ -7,13 +7,17 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { PlayersPage } from '../pages/players/players';
 import { PlayerProfileLockerPage } from '../pages/player-profile-locker/player-profile-locker';
+import { NoteListPage } from '../pages/note-list/note-list';
+import { FooterPage } from '../pages/footer/footer';
 
 
 @NgModule({
   declarations: [
     MyApp,
     PlayersPage,
-    PlayerProfileLockerPage
+    PlayerProfileLockerPage,
+    NoteListPage,
+    //FooterPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,9 @@ import { PlayerProfileLockerPage } from '../pages/player-profile-locker/player-p
   entryComponents: [
     MyApp,
     PlayersPage,
-    PlayerProfileLockerPage
+    PlayerProfileLockerPage,
+    NoteListPage,
+    //FooterPage
   ],
   providers: [
     StatusBar,

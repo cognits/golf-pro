@@ -51,6 +51,21 @@
   display: flex;
 }
 
+.horizontalLeft{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.horizontalCenter{
+  display: flex;
+  justify-content: center;
+}
+
+.horizontalRight{
+  display: flex;
+  justify-content: flex-end;;
+}
+
 .textCenter{
   text-align: center;
   text-align: -webkit-center;
@@ -81,6 +96,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  background-color: #fff;
 }
 
 .boxItem{
@@ -119,4 +135,27 @@
 // don't show back button in ios
 .back-button.show-back-button{
   display: none;
+}
+
+// big button in footer
+
+.navbarButtonInFooter{
+  height: 70px;
+}
+
+.navbarButtonInFooter > .toolbar-background {
+   border-color: #fff;
+}
+
+.navbarButtonInFooter > .toolbar-content{
+  display: flex;
+  justify-content: center;
+}
+
+.primaryButtonFooter{
+  font-family: Lato_Bold;
+  font-size: 16px;
+  height: 40px;
+  width: 80%;
+  border-radius: 100px;
 }

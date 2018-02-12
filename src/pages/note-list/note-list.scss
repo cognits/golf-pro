@@ -1,0 +1,72 @@
+page-note-list {
+  // header
+  .header_title > div{
+    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    font-family: Lato_Regular;
+    padding: 0;
+    text-align: center;
+  }
+
+  .iconHeader{
+    width: 24px;
+  }
+
+  .buttonBack{
+    background-color: transparent;
+  }
+
+  // notes
+  .noteContainer{
+    border-bottom: 1px solid #E8ECf1;
+    display: flex;
+  }
+
+  .textNoteContainer{
+    width: 80%;
+  }
+
+  .textLesson{
+    font-family: Lato_Bold;
+    color: #6D87A6;
+    font-size: 12px;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  .descriptionNote{
+    font-family: Lato_Regular;
+    color: #6D87A6;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .dateNote{
+    font-family: Lato_Italic;
+    color: #6D87A6;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  .iconEditContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    padding-bottom: 10px;
+  }
+
+  .iconEdit{
+    width: 24px;
+  }
+
+  .buttonSendContainer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+}

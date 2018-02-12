@@ -171,12 +171,14 @@ page-player-profile-locker {
     padding: 6px 11px;
     border-radius: 4px;
     margin-right: 5px;
+    margin-bottom: 10px;
   }
 
   // edit tags
 
   .editTagsButton{
     margin-top: 20px;
+    height: 40px;
   }
 
   .button-ios-grayButton.activated{
@@ -260,6 +262,18 @@ page-player-profile-locker {
     margin-top: 5px;
   }
 
+  .greenNumber{
+    color: #63c85c;
+  }
+
+  .redNumber{
+    color: #ff4235;
+  }
+
+  .yellowNumber{
+    color: #ffda40;
+  }
+
   .circleActivityHistory{
     position: relative;
     border: 1px solid #fff;
@@ -341,6 +355,7 @@ page-player-profile-locker {
 
   .sendNoteButton{
     margin-top: 10px;
+    height: 40px;
   }
 
 }
