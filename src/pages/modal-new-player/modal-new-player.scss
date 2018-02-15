@@ -1,0 +1,190 @@
+page-modal-new-player {
+  // header
+  .navBarModal > div{
+    background-color: transparent;
+    border-color: transparent !important;
+  }
+
+  .titleHeader > div{
+    color: #4A5C72;
+    font-family: Lato_Bold;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  // close button
+
+  .closeModal{
+    background-color: transparent;
+    color: #4A5C72;
+    font-family: Lato_Bold;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 10px;
+  }
+
+  // pagination
+
+  .swiper-container-horizontal > .swiper-pagination-bullets{
+    top: 0px;
+  }
+
+  .swiper-pagination-bullet{
+    margin: 0 2px !important;
+    width: 20px;
+    height: 5px;
+    border-radius: 4px;
+  }
+
+  .slide-zoom{
+    height: 100%;
+    padding: 0 16px;
+  }
+
+  .iconAddPhoto{
+    width: 70px;
+    margin-top: 40px;
+  }
+
+  .textBlue{
+    font-size: 16px;
+    color: #6D87A6;
+    text-align: left;
+    font-family: Lato_Regular;
+    margin: 30px 0 0;
+  }
+
+  .label{
+    color: #4A5C72;
+    font-family: Lato_Bold;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 16px;
+    text-align: left;
+  }
+
+  .inputTransparent{
+    width: 100%;
+    height: 30px;
+    color: #4A5C72;
+    font-family: Lato_Bold;
+    font-size: 14px;
+    box-shadow: none;
+    border: 1px solid #E8ECf1;
+    padding: 0 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+  }
+
+  .inputTransparent::placeholder{
+    color: #E8ECf1;
+    font-family: Lato_Regular;
+    font-size: 14px;
+  }
+
+  .selectContainer{
+      width: 33%;
+  }
+
+  .selectTransparent{
+    width: 90%;
+    height: 30px;
+    color: #E8ECf1;
+    font-family: Lato_Regular;
+    font-size: 14px;
+    box-shadow: none;
+    border: 1px solid #E8ECf1;
+    padding: 0 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+  }
+
+  .primaryButtonFooter{
+    margin-left: 10px;
+  }
+
+  .marginTop{
+    margin-top: 60px;
+  }
+
+  .textAreaTransparent{
+    width: 100%;
+    height: 20%;
+    color: #4A5C72;
+    font-family: Lato_Regular;
+    font-size: 14px;
+    box-shadow: none;
+    border: 1px solid #E8ECf1;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    resize: none;
+  }
+
+  .textAreaTransparent::placeholder{
+    color: #E8ECf1;
+    font-family: Lato_Regular;
+    font-size: 14px;
+  }
+
+  .descriptionCustomTags{
+    color: #939598;
+    font-family: Lato_Regular;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .newTagContainer{
+    position: relative;
+  }
+
+  .newTagContainer > input{
+    width: 88%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .btnAdd{
+    font-family: Lato_Bold;
+    font-size: 14px;
+    width: 25%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+    border-radius: 22px;
+  }
+
+  .tagsContainer{
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .tagsOff{
+    background-color: #E8ECF1;
+    color: #4A5C72;
+    font-family: Lato_Regular;
+    font-size: 12px;
+    padding: 6px 11px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+  .tagsOn{
+    background-color: #71A5FD;
+    color: #fff;
+    font-family: Lato_Regular;
+    font-size: 12px;
+    padding: 6px 11px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+}

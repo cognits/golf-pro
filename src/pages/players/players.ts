@@ -20,16 +20,13 @@ export class PlayersPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PlayersPage');
-  }
 
   navigateToPlayer() {
     this.navCtrl.push(PlayerProfileLockerPage)
   }
 
-  showModalFilter(){
-    let modalFilter = this.modalCtrl.create('ModalFilterPage')
+  showModal(modal){
+    let modalFilter = this.modalCtrl.create(modal)
     modalFilter.present();
   }
 

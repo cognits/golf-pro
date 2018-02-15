@@ -23,7 +23,7 @@
   </div>
   <div class="buttonsContainer">
     <div class="AddPlayerButton">
-      <button ion-button round full icon-left color="skyBlue" class="margin_0">
+      <button ion-button round full icon-left color="skyBlue" class="margin_0" (click)="showModal('ModalNewPlayerPage')">
         <!-- <ion-icon class="iconAdd"> -->
           <img src="../../assets/img/icon_add_white.png" class="iconInButtons">
         <!-- </ion-icon> -->
@@ -32,7 +32,7 @@
     </div>
 
     <div class="FilterSearchButton">
-      <button name="add" ion-button round full icon-left color="light" class="margin_0" (click)="showModalFilter()">
+      <button name="add" ion-button round full icon-left color="light" class="margin_0" (click)="showModal('ModalFilterPage')">
         <!-- <ion-icon class="iconFunnel"> -->
           <img src="../../assets/img/icon_filter.png" class="iconInButtons">
         <!-- </ion-icon> -->
