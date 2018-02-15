@@ -23,18 +23,18 @@
   </div>
   <div class="buttonsContainer">
     <div class="AddPlayerButton">
-      <button ion-button round full icon-left color="skyBlue" class="margin_0">
+      <button ion-button round full icon-left color="skyBlue" class="margin_0" (click)="showModal('ModalNewPlayerPage')">
         <!-- <ion-icon class="iconAdd"> -->
-          <img src="../../assets/img/icon_add_white.png" class="iconInButtons">
+          <img src="assets/img/icon_add_white.png" class="iconInButtons">
         <!-- </ion-icon> -->
         Add Player
       </button>
     </div>
 
     <div class="FilterSearchButton">
-      <button name="add" ion-button round full icon-left color="light" class="margin_0" (click)="showModalFilter()">
+      <button name="add" ion-button round full icon-left color="light" class="margin_0" (click)="showModal('ModalFilterPage')">
         <!-- <ion-icon class="iconFunnel"> -->
-          <img src="../../assets/img/icon_filter.png" class="iconInButtons">
+          <img src="assets/img/icon_filter.png" class="iconInButtons">
         <!-- </ion-icon> -->
         Filter Search
       </button>
@@ -43,45 +43,13 @@
 
   <div class="">
     <ion-list no-lines class="ionListPlayers">
-      <ion-item (click)="navigateToPlayer()">
+      <ion-item *ngFor="let grocery of groceries" (click)="navigateToPlayer(grocery.id)">
         <ion-avatar item-start>
-          <img src="../../assets/img/imagen_prueba.jpg">
+          <img src="{{grocery.profile_pic_url}}">
         </ion-avatar>
-        <p class="NameText">Johnny Doe</p>
-        <p class="LevelText">Level 1 (Beginner)</p>
-        <img src="../../assets/img/icon_right_grey.png" class="icon_right_grey">
-      </ion-item>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../../assets/img/imagen_prueba.jpg">
-        </ion-avatar>
-        <p class="NameText">Johnny Doe</p>
-        <p class="LevelText">Level 1 (Beginner)</p>
-        <img src="../../assets/img/icon_right_grey.png" class="icon_right_grey">
-      </ion-item>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../../assets/img/imagen_prueba.jpg">
-        </ion-avatar>
-        <p class="NameText">Johnny Doe</p>
-        <p class="LevelText">Level 1 (Beginner)</p>
-        <img src="../../assets/img/icon_right_grey.png" class="icon_right_grey">
-      </ion-item>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../../assets/img/imagen_prueba.jpg">
-        </ion-avatar>
-        <p class="NameText">Johnny Doe</p>
-        <p class="LevelText">Level 1 (Beginner)</p>
-        <img src="../../assets/img/icon_right_grey.png" class="icon_right_grey">
-      </ion-item>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../../assets/img/imagen_prueba.jpg">
-        </ion-avatar>
-        <p class="NameText">Johnny Doe</p>
-        <p class="LevelText">Level 1 (Beginner)</p>
-        <img src="../../assets/img/icon_right_grey.png" class="icon_right_grey">
+        <p class="NameText">{{grocery.first_name}} {{grocery.last_name}}</p>
+        <p class="LevelText">{{grocery.sports.golf.experience_level}}</p>
+        <img src="assets/img/icon_right_grey.png" class="icon_right_grey">
       </ion-item>
     </ion-list>
 

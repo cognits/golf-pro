@@ -9,7 +9,7 @@
   <ion-navbar color="primary">
     <ion-buttons left>
       <button (click)="back_to_players()" class="buttonBack">
-        <img src="../../assets/img/icon_back_white.png" class="iconHeader">
+        <img src="assets/img/icon_back_white.png" class="iconHeader">
       </button>
     </ion-buttons>
 
@@ -17,7 +17,7 @@
 
     <ion-buttons right>
       <button class="buttonBack">
-        <img src="../../assets/img/icon_settings.png" class="iconHeader">
+        <img src="assets/img/icon_settings.png" class="iconHeader">
       </button>
     </ion-buttons>
 
@@ -40,30 +40,30 @@
       </ion-segment-button>
     </ion-segment>
   </div>
-  <div class="cardContainer" [ngSwitch]="profile_locker">
-    <ion-list *ngSwitchCase="'profile'" class="list_profile_locker">
+  <div class="cardContainer"  [ngSwitch]="profile_locker">
+    <ion-list   *ngSwitchCase="'profile'" class="list_profile_locker">
        <ion-card class="cardProfile">
           <div class="picNameContainer">
-            <img class="picPlayer" src="assets/img/imagen_prueba.jpg" alt="">
+            <img class="picPlayer" src="{{objects.profile_pic_url}}" alt="">
             <div class="nameDescriptionContainer">
-              <p class="titleCard">Charles Porter</p>
-              <p class="descriptionCard">Oct 29, 2009</p>
-              <p class="descriptionCard">519-1556-125</p>
-              <p class="descriptionCard">charlesporter@gmail.com</p>
+              <p class="titleCard">{{objects.first_name}}</p>
+              <p class="descriptionCard">{{objects.birthday}}</p>
+              <p class="descriptionCard">{{objects.phone_number}}</p>
+              <p class="descriptionCard">{{objects.email}}</p>
             </div>
           </div>
           <hr class="hr">
           <div class="displayFlex">
             <div class="statusInfoContainer">
-              <p class="titleCard">Status &nbsp;<span class="statusText"> Active</span></p>
-              <p class="descriptionCard">Login: <span class="titleCard12">3 days ago</span></p>
-              <p class="descriptionCard">Messages: <span class="titleCard12">5</span></p>
-              <p class="descriptionCard">Messaged: <span class="titleCard12">10 days ago</span></p>
+              <p class="titleCard">Status &nbsp;<span class="statusText"> {{objects.status}}</span></p>
+              <p class="descriptionCard">Login: <span class="titleCard12">{{objects.last_login}}</span></p>
+              <p class="descriptionCard">Messages: <span class="titleCard12">{{objects.message_count}}</span></p>
+              <p class="descriptionCard">Messaged: <span class="titleCard12">{{objects.last_messaged}}</span></p>
             </div>
 
             <div class="messageButtonContainer">
               <button ion-button round full icon-left color="skyBlue" class="margin_0">
-                  <img src="../../assets/img/icon_message_white.png" class="iconInButtons">
+                  <img src="assets/img/icon_message_white.png" class="iconInButtons">
                   Send Message
               </button>
             </div>
@@ -75,19 +75,20 @@
          <p class="descriptionCardItalic">"I want to play on my High School Golf Team. I would like to break 80 by the end of the year."</p>
        </ion-card>
 
-       <ion-card class="cardProfile">
+       <ion-card class="cardProfile" >
           <p class="titleCard">Assigned Tags</p>
           <p class="textBlue">System Tags</p>
-          <div>
-            <button class="Tags">Beginner</button>
-            <button class="Tags">Kids</button>
+          <p></p>
+          <div >
+            <button class="Tags" *ngFor="let tagsSystem of objects.system">{{tagsSystem}}</button>
+            <!-- <button class="Tags">Kids</button> {{tagsSystem.goals}}*ngFor="let tagsSystem of this.PersonInfo.sports.golf" -->
           </div>
 
           <p class="textBlue">Custom Tags</p>
           <div>
-            <button class="Tags">Jr</button>
-            <button class="Tags">Mondays</button>
-            <button class="Tags">Wednesdays</button>
+            <button class="Tags" *ngFor="let tagsCustom of objects.custom">{{tagsCustom}}</button>
+            <!-- <button class="Tags">Mondays</button> *ngFor="let tagsCustom of objects.sports.golf.tags.custom"
+            <button class="Tags">Wednesdays</button> -->
           </div>
           <button ion-button round full color="grayButton" class="editTagsButton">Edit Tags</button>
        </ion-card>
@@ -112,22 +113,22 @@
           <p class="titleCard textCenter">Player Level</p>
           <div class="playerLevelContainer">
             <div class="textCenter">
-              <img src="../assets/img/locker_putting.png" class="iconLocker">
+              <img src="assets/img/locker_putting.png" class="iconLocker">
               <p class="textBlueLevel">Putting</p>
               <p class="greenNumber">4.6</p>
             </div>
             <div class="textCenter">
-              <img src="../assets/img/locker_chipping.png" class="iconLocker">
+              <img src="assets/img/locker_chipping.png" class="iconLocker">
               <p class="textBlueLevel">Chipping</p>
               <p class="redNumber">2.5</p>
             </div>
             <div class="textCenter">
-              <img src="../assets/img/locker_swing.png" class="iconLocker">
+              <img src="assets/img/locker_swing.png" class="iconLocker">
               <p class="textBlueLevel">Swing</p>
               <p class="redNumber">2.5</p>
             </div>
             <div class="textCenter">
-              <img src="../assets/img/locker_playing.png" class="iconLocker">
+              <img src="assets/img/locker_playing.png" class="iconLocker">
               <p class="textBlueLevel">Playing</p>
               <p class="yellowNumber">3.5</p>
             </div>
@@ -168,7 +169,7 @@
               <p class="dateNote">Dec 15</p>
             </div>
             <div class="iconEditContainer">
-              <img src="../assets/img/icon_edit.png" class="iconEdit">
+              <img src="assets/img/icon_edit.png" class="iconEdit">
             </div>
           </div>
           <!-- de prueba -->
@@ -179,7 +180,7 @@
               <p class="dateNote">Dec 15</p>
             </div>
             <div class="iconEditContainer">
-              <img src="../assets/img/icon_edit.png" class="iconEdit">
+              <img src="assets/img/icon_edit.png" class="iconEdit">
             </div>
           </div>
           <div class="noteContainer">
@@ -189,7 +190,7 @@
               <p class="dateNote">Dec 15</p>
             </div>
             <div class="iconEditContainer">
-              <img src="../assets/img/icon_edit.png" class="iconEdit">
+              <img src="assets/img/icon_edit.png" class="iconEdit">
             </div>
           </div>
           <button ion-button round full color="grayButton" class="sendNoteButton">Add Data</button>
