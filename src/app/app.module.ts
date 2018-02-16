@@ -9,6 +9,7 @@ import { PlayersPage } from '../pages/players/players';
 import { PlayerProfileLockerPage } from '../pages/player-profile-locker/player-profile-locker';
 import { ProfilePage } from '../pages/profile/profile';
 import { NoteListPage } from '../pages/note-list/note-list';
+import { HTTP } from '@ionic-native/http';
 
 
 
@@ -35,6 +36,7 @@ import { NoteListPage } from '../pages/note-list/note-list';
   providers: [
     StatusBar,
     SplashScreen,
+    HTTP,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

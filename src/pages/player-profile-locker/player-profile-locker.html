@@ -40,25 +40,25 @@
       </ion-segment-button>
     </ion-segment>
   </div>
-  <div class="cardContainer" [ngSwitch]="profile_locker">
-    <ion-list *ngSwitchCase="'profile'" class="list_profile_locker">
+  <div class="cardContainer"  [ngSwitch]="profile_locker">
+    <ion-list   *ngSwitchCase="'profile'" class="list_profile_locker">
        <ion-card class="cardProfile">
           <div class="picNameContainer">
-            <img class="picPlayer" src="assets/img/imagen_prueba.jpg" alt="">
+            <img class="picPlayer" src="{{objects.profile_pic_url}}" alt="">
             <div class="nameDescriptionContainer">
-              <p class="titleCard">Charles Porter</p>
-              <p class="descriptionCard">Oct 29, 2009</p>
-              <p class="descriptionCard">519-1556-125</p>
-              <p class="descriptionCard">charlesporter@gmail.com</p>
+              <p class="titleCard">{{objects.first_name}}</p>
+              <p class="descriptionCard">{{objects.birthday}}</p>
+              <p class="descriptionCard">{{objects.phone_number}}</p>
+              <p class="descriptionCard">{{objects.email}}</p>
             </div>
           </div>
           <hr class="hr">
           <div class="displayFlex">
             <div class="statusInfoContainer">
-              <p class="titleCard">Status &nbsp;<span class="statusText"> Active</span></p>
-              <p class="descriptionCard">Login: <span class="titleCard12">3 days ago</span></p>
-              <p class="descriptionCard">Messages: <span class="titleCard12">5</span></p>
-              <p class="descriptionCard">Messaged: <span class="titleCard12">10 days ago</span></p>
+              <p class="titleCard">Status &nbsp;<span class="statusText"> {{objects.status}}</span></p>
+              <p class="descriptionCard">Login: <span class="titleCard12">{{objects.last_login}}</span></p>
+              <p class="descriptionCard">Messages: <span class="titleCard12">{{objects.message_count}}</span></p>
+              <p class="descriptionCard">Messaged: <span class="titleCard12">{{objects.last_messaged}}</span></p>
             </div>
 
             <div class="messageButtonContainer">
@@ -75,19 +75,20 @@
          <p class="descriptionCardItalic">"I want to play on my High School Golf Team. I would like to break 80 by the end of the year."</p>
        </ion-card>
 
-       <ion-card class="cardProfile">
+       <ion-card class="cardProfile" >
           <p class="titleCard">Assigned Tags</p>
           <p class="textBlue">System Tags</p>
-          <div>
-            <button class="Tags">Beginner</button>
-            <button class="Tags">Kids</button>
+          <p></p>
+          <div >
+            <button class="Tags" *ngFor="let tagsSystem of objects.system">{{tagsSystem}}</button>
+            <!-- <button class="Tags">Kids</button> {{tagsSystem.goals}}*ngFor="let tagsSystem of this.PersonInfo.sports.golf" -->
           </div>
 
           <p class="textBlue">Custom Tags</p>
           <div>
-            <button class="Tags">Jr</button>
-            <button class="Tags">Mondays</button>
-            <button class="Tags">Wednesdays</button>
+            <button class="Tags" *ngFor="let tagsCustom of objects.custom">{{tagsCustom}}</button>
+            <!-- <button class="Tags">Mondays</button> *ngFor="let tagsCustom of objects.sports.golf.tags.custom"
+            <button class="Tags">Wednesdays</button> -->
           </div>
           <button ion-button round full color="grayButton" class="editTagsButton">Edit Tags</button>
        </ion-card>
