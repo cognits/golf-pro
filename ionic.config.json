@@ -1,6 +1,6 @@
 {
   "name": "golf-pro",
-  "app_id": "",
+  "app_id": "81a5f578",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

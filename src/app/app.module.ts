@@ -8,7 +8,7 @@ import { MyApp } from './app.component';
 import { PlayersPage } from '../pages/players/players';
 import { PlayerProfileLockerPage } from '../pages/player-profile-locker/player-profile-locker';
 import { NoteListPage } from '../pages/note-list/note-list';
-import { FooterPage } from '../pages/footer/footer';
+//import { FooterPage } from '../pages/footer/footer';
 import { HTTP } from '@ionic-native/http';
 
 

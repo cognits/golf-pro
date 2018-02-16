@@ -45,7 +45,7 @@ export class PlayerProfileLockerPage {
     this.http.get('https://staging-api.junior.golf/v1/users/players/'+ids, {}, {'Content-Type':'application/json','Authorization':'Bearer wCzcFFThlbhsExG3lLX3RGSL7qYBEk','X-MLG-Api':'61fb380fa50d7d03cd18148bc3d1ba70ab1b3522'})
    .then(datas => {
     // alert('succes')
-     // alert(data)
+      alert(typeof datas)
     //  alert(JSON.stringify(datas))
     // alert(JSON.stringify(datas.data))
      ///this.PersonInfo = JSON.parse(JSON.stringify(datas)).data
