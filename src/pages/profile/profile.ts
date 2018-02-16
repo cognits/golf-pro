@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { PlayersPage } from '../players/players';
-
 /**
- * Generated class for the FooterPage page.
+ * Generated class for the ProfilePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,13 +10,16 @@ import { PlayersPage } from '../players/players';
 
 @IonicPage()
 @Component({
-  selector: 'page-footer',
-  templateUrl: 'footer.html',
+  selector: 'page-profile',
+  templateUrl: 'profile.html',
 })
-export class FooterPage {
-
-  tab1Root = PlayersPage;
+export class ProfilePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad ProfilePage');
+  }
+
 }
