@@ -98,6 +98,7 @@ export class PlayerProfileLockerPage {
 
    })
    .catch(error => {
+     
      // alert('errors')
      // alert(JSON.stringify(error))
      // console.log(error)
