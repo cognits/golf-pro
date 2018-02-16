@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
-// import { IonicPage, NavController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { NavController } from 'ionic-angular';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-// import { PlayerProfileLockerPage } from '../pages/player-profile-locker/player-profile-locker';
+
+import { PlayerProfileLockerPage } from '../pages/player-profile-locker/player-profile-locker';
 import { PlayersPage } from '../pages/players/players';
-//import { FooterPage } from '../pages/footer/footer';
+import { ProfilePage } from '../pages/profile/profile';
 
 @Component({
   templateUrl: 'app.html'
 })
+
+
 export class MyApp {
+  @ViewChild('myNav') nav: NavController
+
   rootPage:any = PlayersPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
@@ -41,6 +46,8 @@ export class MyApp {
     if(num == 2){
       this.iconNavFooter =  ['assets/img/nav_agenda_off.png', 'assets/img/nav_activities_off.png', 'assets/img/nav_players_on.png', 'assets/img/nav_messages_off.png', 'assets/img/nav_profile_off.png'];
       this.textFooterClass = ['textFooter', 'textFooter', 'textFooterOn', 'textFooter', 'textFooter'];
+      this.nav.setRoot(PlayersPage, {animate: false});
+
     }
 
     if(num == 3){
@@ -51,6 +58,8 @@ export class MyApp {
     if(num == 4){
       this.iconNavFooter =  ['assets/img/nav_agenda_off.png', 'assets/img/nav_activities_off.png', 'assets/img/nav_players_off.png', 'assets/img/nav_messages_off.png', 'assets/img/nav_profile_on.png'];
       this.textFooterClass = ['textFooter', 'textFooter', 'textFooter', 'textFooter', 'textFooterOn'];
+      this.nav.setRoot(ProfilePage, {animate: false});
+
     }
   }
 

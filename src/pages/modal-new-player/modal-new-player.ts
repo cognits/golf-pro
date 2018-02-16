@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController, ModalController } from 'ionic-angular';
-import { ModalNoteSentPage } from '../modal-note-sent/modal-note-sent';
+import { ModalPlayerAddedPage } from '../modal-player-added/modal-player-added';
 
 /**
- * Generated class for the ModalNewNotePage page.
+ * Generated class for the ModalNewPlayerPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,10 +11,14 @@ import { ModalNoteSentPage } from '../modal-note-sent/modal-note-sent';
 
 @IonicPage()
 @Component({
-  selector: 'page-modal-new-note',
-  templateUrl: 'modal-new-note.html',
+  selector: 'page-modal-new-player',
+  templateUrl: 'modal-new-player.html',
 })
-export class ModalNewNotePage {
+export class ModalNewPlayerPage {
+  sliderOptions = {
+    pager: true,
+    onlyExternal: true
+  }
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private viewCtrl: ViewController, public modalCtrl: ModalController) {
   }
@@ -23,10 +27,12 @@ export class ModalNewNotePage {
     this.viewCtrl.dismiss();
   }
 
+  // show modal success player adeed
+
   showModal(){
-    let modalEdit = this.modalCtrl.create('ModalNoteSentPage')
-    modalEdit.present();
-    this.closeModal();
+    let modalPlayerAdded = this.modalCtrl.create('ModalPlayerAddedPage')
+    modalPlayerAdded.present();
+    this.closeModal()
   }
 
 }

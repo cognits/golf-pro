@@ -8,7 +8,7 @@
   <ion-navbar class="navBarModalEdit">
     <ion-title class="titleHeader">Note</ion-title>
     <ion-buttons right>
-      <button (click)="closeModal()" class="closeModal"><ion-icon name="close"></ion-icon></button>
+      <button (click)="closeModal()" class="closeModal"><img src="assets/img/icon_close.png" class="iconCloseModal"></button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
@@ -23,6 +23,6 @@
 
 <ion-footer>
   <ion-navbar class="navbarButtonInFooter" color="light">
-      <button ion-button disabled color="skyBlue" class="primaryButtonFooter" (click)="showModal('ModalNewNotePage')">Send New Note</button>
+      <button ion-button disabled color="skyBlue" class="primaryButtonFooter" (click)="showModal()">Send New Note</button>
   </ion-navbar>
 </ion-footer>
