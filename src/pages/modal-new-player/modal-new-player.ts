@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ViewController, ModalController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, ViewController, ModalController, Slides } from 'ionic-angular';
+import { slideNext } from './swiper';
+
 import { ModalPlayerAddedPage } from '../modal-player-added/modal-player-added';
 
 /**
@@ -15,6 +17,7 @@ import { ModalPlayerAddedPage } from '../modal-player-added/modal-player-added';
   templateUrl: 'modal-new-player.html',
 })
 export class ModalNewPlayerPage {
+  @ViewChild(Slides) slides: Slides;
   sliderOptions = {
     pager: true,
     onlyExternal: true
@@ -34,5 +37,8 @@ export class ModalNewPlayerPage {
     modalPlayerAdded.present();
     this.closeModal()
   }
+
+  ionViewDidLoad() { this.slides.lockSwipeToNext(true) }
+
 
 }
