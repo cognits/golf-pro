@@ -1,0 +1,117 @@
+<!--
+  Generated template for the ModalNewPlayerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar class="navBarModal">
+    <ion-title class="titleHeader">New Player</ion-title>
+    <ion-buttons right>
+      <button (click)="closeModal()" class="closeModal"><img src="assets/img/icon_close.png" class="iconCloseModal"></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-slides pager>
+    <ion-slide>
+      <div class="">
+        <img src="assets/img/icon_date.png" class="iconAddPhoto">
+        <p class="textBlue">General Data</p>
+        <p class="label">Name</p>
+        <input type="text" placeholder="Enter name" class="inputTransparent">
+        <p class="label">Last name</p>
+        <input type="text" placeholder="Enter last name" class="inputTransparent">
+        <p class="label">Birthday</p>
+        <div class="displayFlex">
+          <div class="selectContainer horizontalLeft">
+            <select class="selectTransparent" name="">
+              <option value="" selected>Day</option>
+              <option value="">26</option>
+            </select>
+          </div>
+          <div class="selectContainer horizontalCenter">
+            <select class="selectTransparent" name="">
+              <option value="">Month</option>
+            </select>
+          </div>
+          <div class="selectContainer horizontalRight">
+            <select class="selectTransparent" name="">
+              <option value="">Year</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <p class="textBlue marginTop">Contact Information</p>
+      <p class="label">Phone Number</p>
+      <input type="number" placeholder="555-555-5555" class="inputTransparent">
+      <p class="label">Emailr</p>
+      <input type="email" placeholder="example@me.com" class="inputTransparent">
+    </ion-slide>
+
+    <ion-slide>
+      <p class="textBlue marginTop">Locker Details</p>
+      <p class="label">Coach</p>
+      <input type="text" placeholder="Coach name" class="inputTransparent">
+      <p class="label">Onboard Date</p>
+      <div class="displayFlex">
+        <div class="selectContainer horizontalLeft">
+          <select class="selectTransparent" name="">
+            <option value="" selected>Day</option>
+            <option value="">26</option>
+          </select>
+        </div>
+        <div class="selectContainer horizontalCenter">
+          <select class="selectTransparent" name="">
+            <option value="">Month</option>
+          </select>
+        </div>
+        <div class="selectContainer horizontalRight">
+          <select class="selectTransparent" name="">
+            <option value="">Year</option>
+          </select>
+        </div>
+      </div>
+      <p class="label">Player's Goal</p>
+      <textarea placeholder='"My goal is to..."' class="textAreaTransparent"></textarea>
+    </ion-slide>
+
+    <ion-slide>
+      <p class="textBlue marginTop">Custom Tags</p>
+      <p class="descriptionCustomTags">You can assign custom tags to a specific player to filter future searches</p>
+      <p class="label">Create New Tag</p>
+      <div class="newTagContainer">
+        <input type="text" placeholder='New Tag' class="inputTransparent">
+        <button ion-button color="skyBlue" class="btnAdd">Add</button>
+      </div>
+      <p class="label">Create New Tag</p>
+      <div class="tagsContainer">
+        <button class="tagsOff">Superstars</button>
+        <button class="tagsOff">Monday</button>
+        <button class="tagsOff">FirstTeePlayers</button>
+        <button class="tagsOff">G82</button>
+        <button class="tagsOff">Active</button>
+        <button class="tagsOff">Jr</button>
+        <button class="tagsOff">4DRecord</button>
+        <button class="tagsOff">2018</button>
+        <button class="tagsOff">Lefty</button>
+        <button class="tagsOff">Senior</button>
+        <button class="tagsOff">Wednesday</button>
+        <button class="tagsOn">NiceShot</button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+
+<ion-footer>
+  <ion-navbar class="navbarButtonInFooter" color="light">
+      <button ion-button color="grayButton" class="grayButtonFooter">Cancel</button>
+      <button ion-button color="skyBlue" class="primaryButtonFooter" (click)="showModal()">Next</button>
+  </ion-navbar>
+</ion-footer>

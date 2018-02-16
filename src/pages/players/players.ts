@@ -61,8 +61,8 @@ groceries: any;
     this.navCtrl.push(PlayerProfileLockerPage,data)
   }
 
-  showModalFilter(){
-    let modalFilter = this.modalCtrl.create('ModalFilterPage')
+  showModal(modal){
+    let modalFilter = this.modalCtrl.create(modal)
     modalFilter.present();
   }
 

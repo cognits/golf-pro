@@ -7,9 +7,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { PlayersPage } from '../pages/players/players';
 import { PlayerProfileLockerPage } from '../pages/player-profile-locker/player-profile-locker';
+import { ProfilePage } from '../pages/profile/profile';
 import { NoteListPage } from '../pages/note-list/note-list';
+<<<<<<< HEAD
 //import { FooterPage } from '../pages/footer/footer';
+=======
+>>>>>>> 1b00e3667af89386b85a815ff23b779d7c21e1e1
 import { HTTP } from '@ionic-native/http';
+
 
 
 @NgModule({
@@ -18,7 +23,7 @@ import { HTTP } from '@ionic-native/http';
     PlayersPage,
     PlayerProfileLockerPage,
     NoteListPage,
-    //FooterPage
+    ProfilePage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,7 @@ import { HTTP } from '@ionic-native/http';
     PlayersPage,
     PlayerProfileLockerPage,
     NoteListPage,
-    //FooterPage
+    ProfilePage
   ],
   providers: [
     StatusBar,
