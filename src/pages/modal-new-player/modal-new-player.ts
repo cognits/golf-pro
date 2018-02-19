@@ -1,6 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController, ModalController, Slides } from 'ionic-angular';
-import { slideNext } from './swiper';
 
 import { ModalPlayerAddedPage } from '../modal-player-added/modal-player-added';
 
